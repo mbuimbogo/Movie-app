@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Header = ({text}) => {
+function Header(){
   return (
-  <Header className="App-header">
-  <h2>{text}</h2>
-  </Header>
+  <header className="App-header">
+  <h2>EPIC MOVIES</h2>
+  </header>
   )
 }
 
