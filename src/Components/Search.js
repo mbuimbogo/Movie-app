@@ -11,6 +11,11 @@ const resetInputField=() => {
     setSearchValue("")
 }
 
+const callSearchFunction = (e) => {
+    e.preventDefault();
+    search(searchValue);
+    resetInputField();
+}
   return (
     <form className='search'>
         <input 
