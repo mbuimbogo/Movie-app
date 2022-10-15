@@ -3,6 +3,14 @@ import { useState } from 'react'
 
 const Search = (search) => {
     const [searchValue, setSearchValue] = useState("");
+const handleSearchInputChanges = (e) => {
+    setSearchValue(e.target.value);
+}
+
+const resetInputField=() => {
+    setSearchValue("")
+}
+
   return (
     <form className='search'>
         <input 
